@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b1120;
+    color: white;
+}
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.login-card {
+    width: 100%;
+    max-width: 420px;
+
+    background: #111827;
+
+    padding: 40px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+}
+
+.logo {
+    width: 75px;
+    height: 75px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+
+    border-radius: 18px;
+
+    background: #2563eb;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    color: #9ca3af;
+}
+
+.discord-button,
+button {
+    display: inline-block;
+
+    border: none;
+
+    padding: 13px 20px;
+
+    border-radius: 10px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    text-decoration: none;
+
+    transition: 0.2s;
+}
+
+button:hover,
+.discord-button:hover {
+    opacity: 0.85;
+}
+
+.danger {
+    background: #dc2626;
+}
+
+.topbar {
+    height: 70px;
+
+    padding: 0 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #111827;
+
+    border-bottom: 1px solid #1f2937;
+}
+
+.user-area {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.logout {
+    color: #9ca3af;
+
+    text-decoration: none;
+}
+
+.dashboard {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 35px 20px;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+}
+
+.card {
+    background: #111827;
+
+    border: 1px solid #1f2937;
+
+    border-radius: 15px;
+
+    padding: 25px;
+
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.button-row {
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+}
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+label {
+    margin-top: 10px;
+
+    color: #d1d5db;
+
+    font-size: 14px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+
+    padding: 12px;
+
+    border-radius: 8px;
+
+    border: 1px solid #374151;
+
+    background: #0f172a;
+
+    color: white;
+
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+form button {
+    margin-top: 10px;
+}
+
+.request,
+.record {
+    background: #0f172a;
+
+    border: 1px solid #374151;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+}
+
+.request-buttons {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 10px;
+}
+
+.success {
+    color: #4ade80;
+}
+
+.error {
+    color: #f87171;
+}
+
+@media (max-width: 600px) {
+
+    .topbar {
+        padding: 0 15px;
+    }
+
+    .dashboard {
+        padding: 20px 15px;
+    }
+
+    .login-card {
+        padding: 30px 20px;
+    }
+
+}
